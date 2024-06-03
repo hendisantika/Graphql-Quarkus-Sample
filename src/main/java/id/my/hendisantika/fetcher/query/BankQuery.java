@@ -1,4 +1,4 @@
-package id.my.hendisantika.fetcher;
+package id.my.hendisantika.fetcher.query;
 
 import id.my.hendisantika.domain.Bank;
 import id.my.hendisantika.repository.BankRepository;
