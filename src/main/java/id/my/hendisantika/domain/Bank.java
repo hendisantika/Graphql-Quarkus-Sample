@@ -27,7 +27,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-@Table(name = "bank")
+@Table(name = "t_bank")
 public class Bank {
 
     @Id

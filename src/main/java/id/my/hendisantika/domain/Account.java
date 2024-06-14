@@ -28,7 +28,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name = "account")
+@Table(name = "t_account")
 public class Account {
 
     @Id
