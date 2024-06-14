@@ -63,7 +63,21 @@ mutation CREATE {
     }
 ```
 
+Add New Data
+
+```shell
+mutation CREATE {
+  createBank(bank: {name: "Itadori Yuji", country: "Japan"}) {
+    id
+    name
+    country
+  }
+}
+```
+
 Now you will use the json to query the data entered in the previous json
+
+Get All Banks
 
 ```shell script
 
@@ -76,4 +90,37 @@ Now you will use the json to query the data entered in the previous json
 }
 ```
 
+Get All Datas
+
+```shell
+{
+ banks{
+  id
+  name
+  country
+ }
+}
+```
+
+Get Data by ID
+
+```shell
+{
+  bank(id: 2) {
+    id
+    name
+    country
+  }
+}
+```
+
+Get field ID only
+
+```shell
+{
+  bank(id: 1) {
+    id
+  }
+}
+```
 Here we finish a Project implementing GraphQL with Quarkus.
